@@ -2,6 +2,8 @@
 
 namespace Flx\NoSpam;
 
+use Flx\NoSpam\Helpers\Database;
+
 class Service
 {
 
@@ -9,6 +11,8 @@ class Service
 
     public function __construct()
     {
+
+        Database::addRow();
 
     }
 
