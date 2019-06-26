@@ -7,3 +7,7 @@
 * Author: Your Name Here
 * Author URI: https://github.com/dseegers
 **/
+
+
+new Flx\NoSpam\Service();
+
