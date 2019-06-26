@@ -7,12 +7,19 @@ namespace Flx\NoSpam\Helpers;
 class Database
 {
 
-    private $wpdb;
+    protected $wpdb;
+    protected $post;
 
     public function __construct()
     {
         global $wpdb;
         $this->wpdb = $wpdb;
+
+        global $post;
+        $this->post = $post;
+
+        var_dump($post->post_title);
+
     }
 
     public function getRow()
@@ -21,19 +28,18 @@ class Database
 
     }
 
-    public static function addRow()
+    public  function addRow()
     {
 
-
         global $wpdb;
-        $table = $wpdb->prefix . 'NoSpam';
-        $data = array('ip' => 123, 'page' => 'ssss');
+        $table = $wpdb->prefix . 'xx';
+        $data = array('ip' => 123, 'page' => 'example');
         $format = array('%d', '%s');
         $wpdb->insert($table, $data, $format);
 
     }
 
-    public static function makeTable()
+    public  function makeTable()
     {
 
         global $wpdb;

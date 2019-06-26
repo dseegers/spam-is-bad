@@ -12,7 +12,8 @@ class Service
     public function __construct()
     {
 
-        Database::addRow();
+      $database = new Database;
+      $database->addRow();
 
     }
 
