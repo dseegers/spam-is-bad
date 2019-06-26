@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "name": "Daan Seegers"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Flx\\NoSpam\\": "src"
+    }
+  }
+}
