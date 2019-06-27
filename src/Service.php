@@ -13,7 +13,7 @@ class Service
     {
 
       $database = new Database;
-      $database->addRow();
+//      $database->addRow();
 
     }
 

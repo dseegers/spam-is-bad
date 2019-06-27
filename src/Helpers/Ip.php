@@ -24,6 +24,7 @@ class Ip
             $ipaddress = getenv('REMOTE_ADDR');
         else
             $ipaddress = 'UNKNOWN';
+
         return $ipaddress;
     }
 

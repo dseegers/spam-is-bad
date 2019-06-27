@@ -7,12 +7,9 @@ require('vendor/autoload.php');
  * Plugin URI:
  * Description: Whoop whoop block that spam
  * Version: 1.0
- * Author: Your Name Here
+ * Author: Daan Seegers
  * Author URI: https://github.com/dseegers
  **/
 
 new Flx\NoSpam\Service();
-
-
-
 

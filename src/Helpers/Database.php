@@ -12,14 +12,7 @@ class Database
 
     public function __construct()
     {
-        global $wpdb;
-        $this->wpdb = $wpdb;
-
-        global $post;
-        $this->post = $post;
-
-        var_dump($post->post_title);
-
+        add_action('the_post', [$this, 'addRow']);
     }
 
     public function getRow()
@@ -28,8 +21,10 @@ class Database
 
     }
 
-    public  function addRow()
+    public  function addRow($post_object)
     {
+
+        var_dump($post_object);
 
         global $wpdb;
         $table = $wpdb->prefix . 'xx';
