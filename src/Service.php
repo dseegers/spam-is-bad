@@ -2,7 +2,7 @@
 
 namespace Flx\NoSpam;
 
-use Flx\NoSpam\Helpers\Database;
+use Flx\NoSpam\Helpers\DataLayer;
 
 class Service
 {
@@ -12,13 +12,12 @@ class Service
     public function __construct()
     {
 
-      $database = new Database;
-//      $database->addRow();
+      $dataLayer = new DataLayer;
 
     }
 
 
-    public function writeIpData()
-    {
-    }
+
+
+
 }

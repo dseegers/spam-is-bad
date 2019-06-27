@@ -23,7 +23,7 @@ class Ip
         else if(getenv('REMOTE_ADDR'))
             $ipaddress = getenv('REMOTE_ADDR');
         else
-            $ipaddress = 'UNKNOWN';
+            $ipaddress = 'null';
 
         return $ipaddress;
     }

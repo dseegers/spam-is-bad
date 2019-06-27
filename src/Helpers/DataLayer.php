@@ -4,7 +4,7 @@
 namespace Flx\NoSpam\Helpers;
 
 
-class Database
+class DataLayer
 {
 
     protected $wpdb;
@@ -24,13 +24,16 @@ class Database
     public  function addRow($post_object)
     {
 
-        var_dump($post_object);
-
         global $wpdb;
+
+        if(Ip::getIp() != 'null'){
+
         $table = $wpdb->prefix . 'xx';
-        $data = array('ip' => 123, 'page' => 'example');
+        $data = array('ip' => Ip::getIp(), 'page' => get_the_ID());
         $format = array('%d', '%s');
         $wpdb->insert($table, $data, $format);
+
+        }
 
     }
 
@@ -44,7 +47,7 @@ class Database
         $sql = "CREATE TABLE $table_name (
 		id mediumint(9) NOT NULL AUTO_INCREMENT,
 		ip BINARY(16) NOT NULL,
-		page varchar(225) NOT NULL,
+		page int() NOT NULL,
 		PRIMARY KEY  (id)
 	) $charset_collate;";
 
