@@ -1,6 +1,6 @@
 <?php
 
-namespace Flx\StructuredData;
+namespace Flx\gStructuredData;
 
 use Flx\StructuredData\Helpers\DataLayer;
 

@@ -5,7 +5,7 @@ require('vendor/autoload.php');
 /**
  * Plugin Name: Stuctured data
  * Plugin URI:
- * Description: Whoop whoop block that spam
+ * Description: Add structured data on my website
  * Version: 1.0
  * Author: Daan Seegers
  * Author URI: https://github.com/dseegers
