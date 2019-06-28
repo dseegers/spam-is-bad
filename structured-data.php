@@ -3,7 +3,7 @@
 require('vendor/autoload.php');
 
 /**
- * Plugin Name: Spam is bad
+ * Plugin Name: Stuctured data
  * Plugin URI:
  * Description: Whoop whoop block that spam
  * Version: 1.0
@@ -11,5 +11,5 @@ require('vendor/autoload.php');
  * Author URI: https://github.com/dseegers
  **/
 
-new Flx\NoSpam\Service();
+new Flx\StructuredData\Service();
 

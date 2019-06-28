@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "Flx\\NoSpam\\": "src"
+      "Flx\\StructuredData\\": "src"
     }
   }
 }

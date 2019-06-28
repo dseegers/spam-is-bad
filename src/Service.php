@@ -1,8 +1,8 @@
 <?php
 
-namespace Flx\NoSpam;
+namespace Flx\StructuredData;
 
-use Flx\NoSpam\Helpers\DataLayer;
+use Flx\StructuredData\Helpers\DataLayer;
 
 class Service
 {
