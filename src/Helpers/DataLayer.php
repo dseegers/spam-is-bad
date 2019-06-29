@@ -12,7 +12,11 @@ class DataLayer
 
     public function __construct()
     {
-//        add_action('the_post', [$this, 'addRow']);
+
+
+        //        add_action('the_post', [$this, 'addRow']);
+
+
     }
 
     public function getRow()
