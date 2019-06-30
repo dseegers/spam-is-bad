@@ -20,21 +20,21 @@ class SettingsBox extends AbstractClass
     public function singleBox($id, $name)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     Write data
+
+            //     Write data
 
 
         } else {
 
-//return read data
+            //return read data
+
             $return = $name . '<br>
   <input type="text" name="' . $id . '" value="">
   <br><br>';
 
         }
 
-
         return $return;
-
     }
 
     public function __destruct()
