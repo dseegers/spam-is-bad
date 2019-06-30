@@ -4,8 +4,9 @@
 
 namespace Flx\StructuredData;
 
+
 use Flx\StructuredData\Helpers\DataLayer;
-use Flx\StructuredData\Helpers\MetaBox;
+use Flx\StructuredData\Helpers\SettingsBox;
 
 class Service
 {
@@ -27,8 +28,9 @@ dashicons-buddicons-replies', 6);
     public function structuredDataPage()
     {
 
-        $metaBox = new MetaBox;
-        echo $metaBox->singleBox(1, 'boobse');
+        $settingsBox = new SettingsBox($_POST);
+        echo $settingsBox->singleBox(1, 'boobse');
+        echo $settingsBox->singleBox(2, 'boobsse');
 
 
     }
