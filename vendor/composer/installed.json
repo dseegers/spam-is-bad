@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "name": "dseegers/hello-meta-box",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dseegers/hello-meta-box.git",
+            "reference": "89f65c3c946489504633d1554435b072d4cc65ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dseegers/hello-meta-box/zipball/89f65c3c946489504633d1554435b072d4cc65ba",
+            "reference": "89f65c3c946489504633d1554435b072d4cc65ba",
+            "shasum": ""
+        },
+        "time": "2019-06-29T18:53:54+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Flx\\MetaBox\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daan Seegers",
+                "email": "d.seegers.mail@gmail.com"
+            }
+        ],
+        "description": "Hello Meta box"
+    }
+]

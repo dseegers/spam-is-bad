@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Flx\\NoSpam\\' => array($baseDir . '/src'),
+    'Flx\\StructuredData\\' => array($baseDir . '/src'),
+    'Flx\\MetaBox\\' => array($vendorDir . '/dseegers/hello-meta-box/src'),
 );

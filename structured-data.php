@@ -3,7 +3,7 @@
 require('vendor/autoload.php');
 
 /**
- * Plugin Name: Stuctured data
+ * Plugin Name: Daan's structured data
  * Plugin URI:
  * Description: Add structured data on my website
  * Version: 1.0

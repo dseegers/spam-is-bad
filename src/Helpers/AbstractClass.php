@@ -1,10 +1,8 @@
 <?php
 
-
 namespace Flx\StructuredData\Helpers;
 
-
-class DataLayer extends  AbstractClass
+abstract class AbstractClass
 {
 
     protected $wpdb;
@@ -13,9 +11,6 @@ class DataLayer extends  AbstractClass
     public function __construct()
     {
 
-
-
     }
-
 
 }

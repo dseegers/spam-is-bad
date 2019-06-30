@@ -9,14 +9,19 @@ class ComposerStaticInit5f93004ba4809569106056fd5ea1139d
     public static $prefixLengthsPsr4 = array (
         'F' => 
         array (
-            'Flx\\NoSpam\\' => 11,
+            'Flx\\StructuredData\\' => 19,
+            'Flx\\MetaBox\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Flx\\NoSpam\\' => 
+        'Flx\\StructuredData\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Flx\\MetaBox\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dseegers/hello-meta-box/src',
         ),
     );
 
