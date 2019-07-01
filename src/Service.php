@@ -12,7 +12,6 @@ use Flx\StructuredData\Helpers\SettingsBox;
 
 //todo
 //general information
-    //Company email
     //Company slogan
     //Company tax id
     //Company price class
@@ -85,11 +84,11 @@ class Service
         add_settings_section("header_section", "Header Options", [$this, "display_header_options_content"], "seo-options");
 
         add_settings_field("header_logo", "Company Name", [$this, "company_name__form_element"], "seo-options", "header_section");
-        add_settings_field("advertising_code", "Ads Code", [$this, "display_ads_form_element"], "seo-options",
+        add_settings_field("company_email", "Company Email", [$this, "company_email_form_element"], "seo-options",
             "header_section");
 
               register_setting("header_section", "header_logo");
-        register_setting("header_section", "advertising_code");
+        register_setting("header_section", "company_email");
     }
 
     public function display_header_options_content()
@@ -103,11 +102,11 @@ class Service
         <?php
     }
 
-    public  function display_ads_form_element()
+    public  function company_email_form_element()
     {
         ?>
-        <input type="text" name="advertising_code" id="advertising_code"
-               value="<?php echo get_option('advertising_code'); ?>"/>
+        <input type="text" name="company_email" id="company_email"
+               value="<?php echo get_option('company_email'); ?>"/>
         <?php
     }
 
