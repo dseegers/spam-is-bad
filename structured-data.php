@@ -12,7 +12,5 @@ require('vendor/autoload.php');
  **/
 
 
-
-
 new Flx\StructuredData\Service();
 

@@ -10,23 +10,6 @@ use Flx\StructuredData\Helpers\SettingsBox;
 
 
 
-//todo
-//general information
-    //Company slogan
-    //Company tax id
-    //Company price class
-    //Company type
-//Contact details
-    //Fax number
-    //Telephone
-    //Street
-    //Number
-    //Zip code
-    //Place (city)
-    //Province
-    //Country
-//Openinghours
-//Currencies & Payment methods
 
 
 class Service
@@ -83,12 +66,36 @@ class Service
     {
         add_settings_section("header_section", "Header Options", [$this, "display_header_options_content"], "seo-options");
 
-        add_settings_field("header_logo", "Company Name", [$this, "company_name__form_element"], "seo-options", "header_section");
+//        Company name
+        add_settings_field("company_name", "Company Name", [$this, "company_name__form_element"], "seo-options", "header_section");
+        register_setting("header_section", "company_name");
+
+//        Company Email
         add_settings_field("company_email", "Company Email", [$this, "company_email_form_element"], "seo-options",
             "header_section");
-
-              register_setting("header_section", "header_logo");
         register_setting("header_section", "company_email");
+
+//        Company slogan
+        add_settings_field("company_slogan", "Company Email", [$this, "company_slogan_form_element"], "seo-options",
+            "header_section");
+        register_setting("header_section", "company_slogan");
+
+        //Company tax id
+        //Company price class
+        //Company type
+//Contact details
+        //Fax number
+        //Telephone
+        //Street
+        //Number
+        //Zip code
+        //Place (city)
+        //Province
+        //Country
+//Openinghours
+//Currencies & Payment methods
+
+
     }
 
     public function display_header_options_content()
@@ -98,7 +105,7 @@ class Service
     public  function company_name__form_element()
     {
         ?>
-        <input type="text" name="header_logo" id="header_logo" value="<?php echo get_option('header_logo'); ?>"/>
+        <input type="text" name="company_name" id="company_name" value="<?php echo get_option('company_name'); ?>"/>
         <?php
     }
 
@@ -107,6 +114,14 @@ class Service
         ?>
         <input type="text" name="company_email" id="company_email"
                value="<?php echo get_option('company_email'); ?>"/>
+        <?php
+    }
+
+    public  function company_slogan_form_element()
+    {
+        ?>
+        <input type="text" name="company_slogan" id="company_slogan"
+               value="<?php echo get_option('company_slogan'); ?>"/>
         <?php
     }
 
